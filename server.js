@@ -40,6 +40,12 @@ app.get('/', (req, res) => {
   })
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    text: "Some projects"
+  })
+});
+
 app.get('/about', (req, res) => {
   res.render('about', {
     pageTitle: 'my title from server js',
